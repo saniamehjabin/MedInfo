@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "143072295648",
+    "project_id": "medinfo-d4693",
+    "storage_bucket": "medinfo-d4693.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143072295648:android:5cca945e807aed212cee85",
+        "android_client_info": {
+          "package_name": "com.example.medinfo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtdMjZnwFHj9jcVjNiFm-ZGRqHDrSH8Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
