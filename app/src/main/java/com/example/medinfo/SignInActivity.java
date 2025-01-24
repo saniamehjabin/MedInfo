@@ -63,7 +63,16 @@ public class SignInActivity extends AppCompatActivity {
             } else if (pass.isEmpty()) {
                 passEditText.setError("Empty!!");
                 passEditText.requestFocus();
-            } else {
+
+            }
+            else if(email.equals("admin") && pass.equals("admin")) {
+                // Admin login
+                Toast.makeText(getApplicationContext(), "Admin login successful!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), AdminHomeActivity.class);
+                startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                finish();
+            }
+            else {
                 progressBar.setVisibility(View.VISIBLE);
 
                 auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(task -> {

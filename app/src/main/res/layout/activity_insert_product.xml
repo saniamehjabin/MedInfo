@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#EEF3F4"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".InsertProductActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="14dp"
+        android:text="Insert Medicine Info"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:hint="Name"
+        android:background="@drawable/border"
+        android:inputType="text"
+         />
+
+    <EditText
+        android:id="@+id/et_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border"
+        android:hint="Price"
+        android:padding="5dp"
+        android:inputType="numberDecimal"
+       />
+
+    <EditText
+        android:id="@+id/et_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border"
+        android:hint="Description"
+        android:padding="5dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/et_product_dosage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:hint="Dosage"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/et_product_side_effects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border"
+        android:hint="Side Effects"
+        android:padding="5dp"
+        android:inputType="text"
+        />
+
+    <ImageView
+        android:id="@+id/iv_selected_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border"
+        android:scaleType="fitCenter"
+        />
+
+    <Button
+        android:id="@+id/btn_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:backgroundTint="#00BCD4"
+        android:textSize="14sp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <Button
+        android:id="@+id/btn_insert_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Medicine"
+        android:backgroundTint="#00BCD4"
+        android:textSize="14sp"
+        android:layout_marginBottom="5dp"
+        />
+
+</LinearLayout>
