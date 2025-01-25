@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedInfo"
         tools:targetApi="31">
+
         <activity
             android:name=".DeleteProductActivity"
             android:exported="false" />
@@ -26,9 +27,6 @@
             android:exported="false" />
         <activity
             android:name=".AdminViewProductActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AdminActivity"
             android:exported="false" />
         <activity
             android:name=".HomePageActivity"
