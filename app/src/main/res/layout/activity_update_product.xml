@@ -88,28 +88,27 @@
 
     <!-- Horizontal layout for side-by-side buttons -->
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="323dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="10dp"
-        >
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/button_search"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#4768CA"
+            android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginLeft="5dp"
+            android:backgroundTint="#4768CA"
             android:text="Search" />
 
         <Button
             android:id="@+id/button_update"
-            android:layout_width="wrap_content"
+            android:layout_width="132dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:backgroundTint="#036673"
-            android:text="Update Medicine" />
+            android:text="Update " />
     </LinearLayout>
 
 </LinearLayout>
