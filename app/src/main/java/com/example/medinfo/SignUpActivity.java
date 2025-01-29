@@ -35,7 +35,7 @@ public class SignUpActivity extends AppCompatActivity {
     private EditText nameEditText, emailEditText, passEditText, confirmPassEditText;
     private String name, email, pass, confirm_pass;
     private Button submit;
-    private Pattern namePattern = Pattern.compile("[a-z A-Z._]+");
+    private Pattern namePattern = Pattern.compile("[a-z A-Z.-]+");
     private Pattern emailPattern = Pattern.compile("^(cse_)\\d{10}(@lus.ac.bd)$");
     private Pattern passPattern = Pattern.compile("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$");
     private TextView login;
@@ -79,10 +79,7 @@ public class SignUpActivity extends AppCompatActivity {
                     emailEditText.setError("Empty!!");
                     emailEditText.requestFocus();
                 }
-//                else if (!emailPattern.matcher(email).matches()){
-//                    emailEditText.setError("Only LU student email is allowed");
-//                    emailEditText.requestFocus();
-//                }
+
                 else if (pass.isEmpty()){
                     passEditText.setError("Empty!!");
                     passEditText.requestFocus();
@@ -94,10 +91,7 @@ public class SignUpActivity extends AppCompatActivity {
                     confirmPassEditText.setError("Passwords do not match");
                     confirmPassEditText.requestFocus();
                 }
-//                else if (!passPattern.matcher(pass).matches()){
-//                    passEditText.setError("At least one uppercase, lowercase, digit, special character, and password length between 8-20");
-//                    passEditText.requestFocus();
-//                }
+
 
                 else {
                     progressBar.setVisibility(View.VISIBLE);
